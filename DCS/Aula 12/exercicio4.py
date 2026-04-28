@@ -1,5 +1,6 @@
 # 4. Receba o nome, o preço e a quantidade de 5 produtos diferentes. Ao final exiba o valor total que o cliente deverá pagar.
 # Bônus: Exiba uma nota fiscal com tudo que foi comprado e as informações da venda ao final.
+
 valor_final = 0
 nota_fiscal = ""
 
