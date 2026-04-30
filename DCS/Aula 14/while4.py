@@ -3,7 +3,7 @@ qtd_func = 0
 while True:
     nome_func = input("Digite o nome do funcionário: ")
 
-    if nome_func == "SAIR":
+    if nome_func == "SAIR" or nome_func == "sair":
         print("SAINDO DO CADASTRO DE FUNCIONÁRIOS")
         break
 
