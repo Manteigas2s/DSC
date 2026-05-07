@@ -4,8 +4,11 @@
 estoque = ["arroz", "feijão", "macarrão", "leite", "óleo"]
 produto = input("Digite o nome do produto: ")
 
-for i in estoque:
-    if produto == estoque:
-        print("Tem disponivel no estoque!")
-    else:
-        print("Não tem disponivel no estoque!")
+
+if produto in estoque:
+    print("Tem disponivel no estoque!")
+else:
+    print("Não tem disponivel no estoque!")
+
+print("\nEstoque em ordem alfabética: ")
+print(sorted(estoque))

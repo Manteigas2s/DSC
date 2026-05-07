@@ -6,7 +6,9 @@ nomes = ["Carlos", "Beatriz", "Fábio", "Juliana", "Rafael"]
 nomes.append("Tatiane")
 nomes.remove("Fábio")
 
+numero = 1
 for i in nomes:
-    print(f"{i}")
-    
-print(len(nomes))
+    print(f"{numero}. {i}") 
+    numero += 1
+
+print(f"Total de pacientes: {len(nomes)}")
