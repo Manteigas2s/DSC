@@ -3,12 +3,26 @@
 
 estoque = ["arroz", "feijão", "macarrão", "leite", "óleo"]
 produto = input("Digite o nome do produto: ")
+# achou = False
 
+# for p in estoque:
+
+#     if produto == p:
+#         achou = True
+#         break
+    
+# if achou == True:
+#     print("Produto em estoque!")
+# else:
+#     print("Produto fora de estoque!")
 
 if produto in estoque:
     print("Tem disponivel no estoque!")
 else:
     print("Não tem disponivel no estoque!")
 
-print("\nEstoque em ordem alfabética: ")
-print(sorted(estoque))
+estoque_alfabetica = sorted(estoque)
+numero = 1
+for p in estoque_alfabetica:
+    print(f"{numero}. {p}")
+    numero += 1
