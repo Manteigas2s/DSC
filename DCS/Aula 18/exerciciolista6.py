@@ -1,7 +1,7 @@
 # 6. Controle de presença
 # Uma turma tem 6 alunos. Use um for com enumerate() para percorrer a lista de nomes e perguntar ao usuário "presente" ou "ausente" para cada um. Ao final, exiba quantos alunos estiveram presentes e quantos faltaram.
 
-alunos = ["pedro", "tarek", "iarley", "vagner", "mario"]
+alunos = ["pedro", "tarek", "iarley", "vagner", "mario", "paulo"]
 
 presentes = 0
 ausentes = 0
@@ -11,7 +11,7 @@ for i, aluno in enumerate(alunos, start=1):
     
     if status == "presente":
         presentes += 1
-    else:
+    if status == "ausente":
         ausentes += 1
 
 print("\n Resumo da presença: ")
