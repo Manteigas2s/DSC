@@ -20,15 +20,27 @@ agenda = {
     "Matheus": "876554321901"
 }
 
-for i in range(2):
-        nome = input("Digite o nome da pessoa: ").lower
+for i in range(5):
+        nome = input("Digite o nome da pessoa: ")
         telefone = input("Digite o número de telefone: ")
         agenda[nome] = telefone
 
 while True:
-    consulta = input("Digite o nome do contato que você deseja: ").lower
+    print("\nLISTA DE CONTATOS\n")
+    for n in agenda:
+          print(f"{n}")
+
+    nome = input("\nDigite o nome do contato que você deseja ver: ")
     
-    if consulta in agenda:
-        print(agenda[nome])
-    else:
-        print("Não encotrado na lista!")
+    if nome.upper() == "SAIR":
+          print("Encerrando o programa!")
+          break
+
+    print(F"{nome}: {agenda.get(nome,"Nome não encontrado!")}")
+
+    # if nome in agenda:
+    #     print(agenda[nome])
+    # else:
+    #     print("Não encotrado na lista!")
+
+    input("DIGITE ENTER PARA CONTINUAR!")
